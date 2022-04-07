@@ -176,7 +176,7 @@ nav ul li a{
 }
 
 .family-background{
-    background-image: url("/images/family.jpeg");
+    background-image: url("images/family.jpeg");
     opacity: 50%;
     height: 300px;
     background-size: cover;
@@ -364,6 +364,7 @@ label {
 }
 
 /*other inputs*/
+
 .input-style {
     width: 100%;
     padding: 12px 20px;
@@ -483,7 +484,7 @@ nav ul li a{
 }
 
 .family-background{
-    background-image: url("/images/family.jpeg");
+    background-image: url("../images/family.jpeg");
     opacity: 50%;
     height: 700px;
     background-size: cover;
