@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <meta charset="UTF-8">
@@ -13,8 +13,10 @@
     <header>
         <div class="padding-y">
             <div class="purple-background purple-shadow container">
-                <img src="/images/logo_white.png" alt="">
+                <img id="logo" src="/images/logo_white.png" alt="">
+                <img id="responsive-logo" src="/images/logo_no_text.png" alt="">
                 <nav class="nav-container">
+                    <span id="menu-icon" class="material-icons">&#xe5d2;</span>
                     <ul class="list-style-none">
                         <li><a href="index.html">
                                 HOME
@@ -65,39 +67,37 @@
         </div>
     </main>
 
-
-
-<footer>
-    <div class="purple-background flex-footer">
-        <div id="footer-links" class="flex-container">
-            <div>
-                <ul class="list-style-none">
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li><a href="#">Link3</a></li>
-                </ul>
+    <footer>
+        <div class="purple-background grid-footer-container">
+            <div id="footer-links" class="flex-container">
+                <div>
+                    <ul class="list-style-none">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-style-none">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-style-none">
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul class="list-style-none">
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li><a href="#">Link3</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="list-style-none">
-                    <li><a href="#">Link1</a></li>
-                    <li><a href="#">Link2</a></li>
-                    <li><a href="#">Link3</a></li>
-                </ul>
+            <div id="footer-social" class="flex-container">
+                <a href="contact.html"><span class="material-icons">&#xe0be;</span></a>
+                <span class="material-icons">&#xe0e5;</span>
+                <span class="material-icons">&#xe0e5;</span>
             </div>
         </div>
-        <div id="footer-social" class="flex-container">
-            <a href="contact.html"><span class="material-icons">&#xe0be;</span></a>
-            <span class="material-icons">&#xe0e5;</span>
-            <span class="material-icons">&#xe0e5;</span>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>

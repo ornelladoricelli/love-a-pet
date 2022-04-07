@@ -283,11 +283,11 @@ footer a {
 }
 
 #footer-links{
-  font-size: 35px;
+  font-size: 1.3rem;
 }
 
 #footer-social {
-    font-size: 35px !important;
+    font-size: 1.5rem !important;
 }
 
 #footer-social a:visited {
@@ -298,7 +298,7 @@ footer a {
 
 /*FORMS*/
 form {
-    width: 55%;
+    width: 85%;
 }
 
 label {
@@ -318,7 +318,6 @@ label {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
-  cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -329,11 +328,6 @@ label {
 .radio-input-style input{
     position: absolute;
     opacity: 0;
-    cursor: pointer;
-}
-
-.radio-input-style:hover input ~ .checkmark{
-    background-color: #ccc;
 }
 
 .radio-input-style input:checked ~ .checkmark{
@@ -385,17 +379,13 @@ input[type=submit]{
     font-size: 20px;
 }
 
-input[type=submit]:hover{
-    background-color: #006d74;
-}
-
 input[type=reset]{
     color: white;
     font-size: 20px;
 }
 
-input[type=reset]:hover{
-    background-color: #12004a;
+select {
+    font-size: 1em;
 }
 
 /*END FORMS*/  
@@ -416,7 +406,7 @@ input[type=reset]:hover{
 
 .grid-dog-container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -635,13 +625,54 @@ footer a {
 }
 
 #footer-links{
-  font-size: 20px;
-}
+    font-size: 1.2rem;
+  }
 
 #footer-social a:visited {
     color: white;
 }
 
 /*END FOOTER*/
+
+/*FORMS*/
+form {
+    width: 55%;
+}
+
+/*radio*/
+.radio-input-style{
+    cursor: pointer;
+}
+
+.radio-input-style input{
+    cursor: pointer;
+}
+
+.radio-input-style:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+
+/*other inputs*/
+
+input[type=submit]:hover{
+    background-color: #006d74;
+}
+
+input[type=reset]:hover{
+    background-color: #12004a;
+}
+
+select {
+    font-size: 0.9em;
+}
+
+/*END FORMS*/  
+
+/* others */
+.grid-dog-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
 
 }
