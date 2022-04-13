@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 * {
     box-sizing: border-box;
@@ -13,12 +14,6 @@ body{
 
 a {
     text-decoration: none;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex-container{
@@ -79,10 +74,6 @@ a {
 .list-style-none {
     list-style-type: none;
     overflow: hidden;
-}
-
-.rounded-corners {
-    border-radius: 3%;
 }
 
 .margin-y-twenty {
@@ -194,19 +185,12 @@ display: none;
 
 /* INDEX BUTTONS */
 
-.grid-button-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "dog cat"
-    "other other";
-    gap: 2px;
+.margin-0{
+    margin: 0px;;
 }
 
 .anchor-button {
-    height: 100%;
-    width: 100%;
+    line-height: 10vh;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -254,16 +238,16 @@ margin-top: 15px;
 }
 
 .card-style {
+    text-align: center;
     padding: 10px;
     background-color: #5aced5;
     color: #13004b;
 }
 
-.card-style h3 {
-    border-bottom: 1px solid white;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
+.card-style h5 {
+ font-weight: bold;
 }
+
 
 /* END ARTICLES */
 
@@ -271,6 +255,11 @@ margin-top: 15px;
 
 footer a {
     color: white;
+}
+
+footer li a:hover {
+    color: white; 
+    font-weight: 600;
 }
 
 .grid-footer-container {
@@ -485,19 +474,7 @@ nav ul li a{
 
 .family-background{
     opacity: 50%;
-    height: 700px;
-    background-size: cover;
-}
-
-#get-started a {
-    margin-left: 40px;
-    color: white;
-    display: block;
-    width: fit-content;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #119DA4;
+    height: 500px;
 }
 
 #get-started h1 {
@@ -695,4 +672,22 @@ select {
       }
 }
 
+}
+
+@media only screen and (min-width: 991px){
+    .family-background{
+        opacity: 50%;
+        height: 700px;
+    }
+
+    #get-started a {
+        margin-left: 40px;
+        color: white;
+        display: block;
+        width: fit-content;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: #119DA4;
+    }
 }
