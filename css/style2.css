@@ -404,6 +404,11 @@ select {
     width: 90%;
 }
 
+#pet-name {
+    padding: 10px;
+    text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
 /*HEADER*/
 .nav-container {
@@ -653,6 +658,17 @@ select {
 }
 #dog-gallery a:hover {
     color: white; 
+}
+
+#pet-name {
+    width: fit-content;
+    padding: 10px;
+    text-align: start;
+}
+
+#pet-info {
+    font-size: 1.2rem;
+    text-align: start;
 }
 
 }
