@@ -23,13 +23,6 @@ a {
     align-items: center;
 }
 
-.flex-centered-container{
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .flex-wrap-wrap{
     flex-wrap: wrap;
 }
@@ -42,13 +35,6 @@ a {
     column-gap: 30px;
 }
 
-.flex-container-padding{
-    padding: 30px;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .purple-background {
     background-color: #410078;
     color: white;
@@ -71,11 +57,6 @@ a {
     background-color: #006e75;
 }
 
-.list-style-none {
-    list-style-type: none;
-    overflow: hidden;
-}
-
 .margin-y-twenty {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -93,10 +74,6 @@ a {
 
 .text-shadow {
     text-shadow: 2px 2px 4px #363434;
-}
-
-.line-height li{
-    line-height: 2em;
 }
 
 /* HEADER */
@@ -617,9 +594,6 @@ footer a {
 /*END FOOTER*/
 
 /*FORMS*/
-form {
-    width: 55%;
-}
 
 /*radio*/
 .radio-input-style{
