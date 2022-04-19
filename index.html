@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" href="images/logo_black.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Love A Pet - Adoptions</title>
 </head>
 
 <body>
     <header>
-        <div class="padding-y">
-            <div class="purple-background purple-shadow container">
-                <img id="logo" src="images/logo_white.png" alt="">
-                <img id="responsive-logo" src="images/logo_no_text.png" alt="">
-                <nav class="nav-container">
-                    <span id="menu-icon" class="material-icons">&#xe5d2;</span>
-                    <ul class="list-style-none">
-                        <li><a href="index.html">
-                                HOME
-                            </a></li>
-                        <li><a href="put-adoption.html">
-                                PUT UP FOR ADOPTION
-                            </a></li>
-                        <li><a href="#">LOST AND FOUND</a></li>
-                    </ul>
-                    <ul class="list-style-none">
-                        <li><a href=""><span class="material-icons">&#xe7fd;</span></a></li>
-                        <li><a><span class="material-icons">&#xe8b6;</span></a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="container-fluid purple-background purple-shadow">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                <img class="navbar-brand" id="logo" src="images/logo_white.png" alt="">
+                <img class="navbar-brand" id="responsive-logo" src="images/logo_no_text.png" alt="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">HOME</a>
+                            <a class="nav-link" href="put-adoption.html">PUT UP FOR ADOPTION</a>
+                            <a class="nav-link" href="#">LOST AND FOUND</a>
+                            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-person-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </div>
     </header>
 
@@ -41,117 +40,122 @@
             <div class="family-background">
                 <div>
                     <h1 class="text-shadow">Find a pet today!</h1>
-                    <a class="teal-shadow" href="#find-dog">Get started!</a>
+                    <a class="teal-shadow" href="#button-container">Get started!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="button-container">
+            <div class="container-fluid">
+                <div class="row g-3 m-0">
+                    <div class="col-sm-6 col-md-4">
+                        <a class="anchor-button" href="find-dog.html">
+                            <div class="purple-background rounded">
+                                <p>Find a dog</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a class="anchor-button" href="find-dog.html">
+                            <div class="purple-background rounded">
+                                <p>Find a cat</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a class="anchor-button" href="find-dog.html">
+                            <div class="purple-background rounded">
+                                <p>Find other pets</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="grid-button-container">
-                <div id="find-dog" class="grid-button-item">
-                    <a class="anchor-button flex-container purple-background" href="find-dog.html">
-                        <div>
-                            <p>Find a dog</p>
-                        </div>
-                    </a>
-                </div>
-                <div id="find-cat" class="grid-button-item">
-                    <a class="anchor-button flex-container purple-background" href="find-dog.html">
-                        <div>
-                            <p>Find a cat</p>
-                        </div>
-                    </a>
-                </div>
-                <div id="find-other" class="grid-button-item">
-                    <a class="anchor-button flex-container purple-background" href="find-dog.html">
-                        <div>
-                            <p>Find other pets</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 teal-background align-items-center">
+                    <div class="col p-3 p-md-4">
+                        <div class="card card-style">
+                            <div class="card-header bg-transparent border-secondary"><h5 class="card-title">Card title</h5></div>
+                            <div class="card-body">
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos explicabo magnam adipisci amet magni eos facilis praesentium ipsum accusantium error similique quas, inventore ut expedita voluptatibus doloribus atque a provident.</p>
+                              <p class="card-text"><span class="material-icons">&#xe145;</span></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col p-3 p-md-4">
+                        <div class="card card-style">
+                            <div class="card-header bg-transparent border-secondary"><h5 class="card-title">Card title</h5></div>
+                            <div class="card-body">
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos explicabo magnam adipisci amet magni eos facilis praesentium ipsum accusantium error similique quas, inventore ut expedita voluptatibus doloribus atque a provident.</p>
+                              <p class="card-text"><span class="material-icons">&#xe145;</span></p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col p-3 p-md-4">
+                        <div class="card card-style">
+                            <div class="card-header bg-transparent border-secondary"><h5 class="card-title">Card title</h5></div>
+                            <div class="card-body">
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos explicabo magnam adipisci amet magni eos facilis praesentium ipsum accusantium error similique quas, inventore ut expedita voluptatibus doloribus atque a provident.</p>
+                              <p class="card-text"><span class="material-icons">&#xe145;</span></p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
             </div>
-        </section>
-
-        <section>
-            <div class="grid-article-container teal-background">
-                <article>
-                    <div class="grid-article-item flex-container card-style rounded-corners teal-shadow">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veritatis expedita!
-                                    Quas, laudantium? Repudiandae pariatur earum assumenda ipsum deserunt inventore odio
-                                    quam exercitationem dignissimos cumque consequuntur, molestias voluptatum quisquam odit.
-                                </p>
-                        </div>
-                        <div class="icon-plus">
-                            <span class="material-icons">&#xe145;</span>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="grid-article-item flex-container card-style rounded-corners teal-shadow">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veritatis expedita!
-                                    Quas, laudantium? Repudiandae pariatur earum assumenda ipsum deserunt inventore odio
-                                    quam exercitationem dignissimos cumque consequuntur, molestias voluptatum quisquam odit.
-                                </p>
-                        </div>
-                        <div class="icon-plus">
-                            <span class="material-icons">&#xe145;</span>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div class="grid-article-item flex-container card-style rounded-corners teal-shadow">
-                        <div>
-                            <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, veritatis expedita!
-                                    Quas, laudantium? Repudiandae pariatur earum assumenda ipsum deserunt inventore odio
-                                    quam exercitationem dignissimos cumque consequuntur, molestias voluptatum quisquam odit.
-                                </p>
-                        </div>
-                        <div class="icon-plus">
-                            <span class="material-icons">&#xe145;</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
+            
         </section>
     </main>
 
-    <footer>
-        <div class="purple-background grid-footer-container">
-            <div id="footer-links" class="flex-container">
-                <div>
-                    <ul class="list-style-none">
-                        <li><a href="#">Link1</a></li>
-                        <li><a href="#">Link2</a></li>
-                        <li><a href="#">Link3</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="list-style-none">
-                        <li><a href="#">Link1</a></li>
-                        <li><a href="#">Link2</a></li>
-                        <li><a href="#">Link3</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="list-style-none">
-                        <li><a href="#">Link1</a></li>
-                        <li><a href="#">Link2</a></li>
-                        <li><a href="#">Link3</a></li>
-                    </ul>
-                </div>
+    <div class="container-fluid purple-background">
+        <footer class="py-5 mx-3">
+          <div class="row">
+              <div class="col-12 col-md-9">
+                  <div class="row d-flex justify-content-around text-center text-md-start">
+                    <div class="col-4 col-md-3">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Home</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Put up for adoption</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Lost and found</a></li>                          
+                        </ul>
+                      </div>
+                
+                      <div class="col-4 col-md-3">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Find a dog</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Find a cat</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Find other pets</a></li>
+                        </ul>
+                      </div>
+                
+                      <div class="col-4 col-md-3">
+                        <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Article</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Article</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="p-0">Article</a></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+      
+            <div id="footer-social" class="col-12 col-md-3 g-3">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="ms-3"><a class="" href="contact.html"><i class="bi bi-envelope"></i></a></li>
+                    <li class="ms-3"><a class="" href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li class="ms-3"><a class="" href="#"><i class="bi bi-instagram"></i></a></li>
+                  </ul>
             </div>
-            <div id="footer-social" class="flex-container">
-                <a href="contact.html"><span class="material-icons">&#xe0be;</span></a>
-                <span class="material-icons">&#xe0e5;</span>
-                <span class="material-icons">&#xe0e5;</span>
-            </div>
-        </div>
-    </footer>
+          </div>
+      
+          <div class="py-3 my-2 border-top text-center text-md-start">
+            <p>© 2022 Love a pet. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 * {
     box-sizing: border-box;
@@ -15,23 +16,10 @@ a {
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .flex-container{
     margin: 20px 0px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-.flex-centered-container{
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -47,13 +35,6 @@ a {
     column-gap: 30px;
 }
 
-.flex-container-padding{
-    padding: 30px;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .purple-background {
     background-color: #410078;
     color: white;
@@ -66,23 +47,6 @@ a {
 
 .teal-background {
     background-color: #119DA4;
-}
-
-.light-teal-background {
-    background-color: #5acdd4;
-}
-
-.dark-teal-background {
-    background-color: #006e75;
-}
-
-.list-style-none {
-    list-style-type: none;
-    overflow: hidden;
-}
-
-.rounded-corners {
-    border-radius: 3%;
 }
 
 .margin-y-twenty {
@@ -104,10 +68,6 @@ a {
     text-shadow: 2px 2px 4px #363434;
 }
 
-.line-height li{
-    line-height: 2em;
-}
-
 /* HEADER */
 
 header {
@@ -116,14 +76,6 @@ header {
     width: 100%;
     z-index: 10;
     font-weight: 600;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 80%;
-    height: 100px;
 }
 
 nav ul {
@@ -141,12 +93,6 @@ nav ul {
     display: none;
 }
 
-#menu-icon {
-    font-size: 50px;
-    font-weight: bold;
-    margin-right: 30px;
-}
-
 nav ul li{
     float: left;
 }
@@ -156,10 +102,6 @@ nav ul li a{
     display: block;
     text-align: center;
     padding: 14px 16px;
-}
-
-.padding-y {
-    padding: 10px 0px;
 }
 
 .purple-shadow{
@@ -194,19 +136,8 @@ display: none;
 
 /* INDEX BUTTONS */
 
-.grid-button-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "dog cat"
-    "other other";
-    gap: 2px;
-}
-
 .anchor-button {
-    height: 100%;
-    width: 100%;
+    line-height: 10vh;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -215,55 +146,21 @@ display: none;
     font-size: 45px;
 }
 
-#find-dog{
-    grid-area: dog;
-}
-
-#find-cat{
-    grid-area: cat;
-}
-
-#find-other{
-    grid-area: other;
-}
-
 /* END INDEX BUTTONS */
 
 /* ARTICLES */
-.grid-article-container {
-    margin-top: 40px;
-    padding: 20px 0px;
-    display: grid;
-    grid-template-columns: auto;
-    gap: 20px;
-}
-.grid-article-item {
-    width:80%;
-    text-align: center;
-    flex-direction: column;
-    font-size: 35px;
-    margin: auto;
-}
-
-.icon-plus {
-margin-top: 15px;
-}
-
-.icon-plus span {
-    font-size: 40px;
-}
 
 .card-style {
+    text-align: center;
     padding: 10px;
     background-color: #5aced5;
     color: #13004b;
 }
 
-.card-style h3 {
-    border-bottom: 1px solid white;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
+.card-style h5 {
+ font-weight: bold;
 }
+
 
 /* END ARTICLES */
 
@@ -273,17 +170,9 @@ footer a {
     color: white;
 }
 
-.grid-footer-container {
-    padding: 30px;
-    margin: 20px 0px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-}
-
-#footer-links{
-  font-size: 1.3rem;
+footer li a:hover {
+    color: white; 
+    font-weight: 600;
 }
 
 #footer-social {
@@ -393,37 +282,17 @@ select {
 
 /*others*/  
 
-.fourty-percent-width {
-    width: 40%;
-}
-
-.fourty-percent-width img {
-    width: 100%;
-}
-
 #pet-info {
     font-size: 1.3rem;
 }
 
-.grid-dog-container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr;
-}
-
-.grid-dog-container img{
-    width: 90%;
+#pet-name {
+    padding: 10px;
+    text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
 /*HEADER*/
-.nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width:80%;
-    height: max-content;
-}
 
 nav ul {
     display: block;
@@ -451,10 +320,6 @@ nav ul li a{
     padding: 14px 16px;
 }
 
-.padding-y {
-    padding: 10px 0px;
-}
-
 .purple-shadow{
     box-shadow:0px 3px 5px 2px #13004b;
 }
@@ -469,10 +334,6 @@ nav ul li a{
         margin: 0px 15px 0px 30px;
         height: 5em;
     }
-    
-#menu-icon {
-        display: none;
-    }
 
 /* END HEADER */
 
@@ -485,19 +346,7 @@ nav ul li a{
 
 .family-background{
     opacity: 50%;
-    height: 700px;
-    background-size: cover;
-}
-
-#get-started a {
-    margin-left: 40px;
-    color: white;
-    display: block;
-    width: fit-content;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #119DA4;
+    height: 500px;
 }
 
 #get-started h1 {
@@ -514,18 +363,6 @@ nav ul li a{
 
 /* INDEX BUTTONS */
 
-.grid-button-container{
-    height: 300px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "dog cat other";
-    gap: 15px;
-    align-items: center;
-    padding: 0px 20px;
-}
-
 .anchor-button {
     box-shadow: 5px 5px 3px #2c0050;
     text-align: center;
@@ -535,23 +372,6 @@ nav ul li a{
     font-weight: 600;
     font-size: 30px;
     border-radius: 3%;
-}
-
-.grid-button-item{
-    height: 50%;
-    vertical-align: middle;
-}
-
-#find-dog{
-    grid-area: dog;
-}
-
-#find-cat{
-    grid-area: cat;
-}
-
-#find-other{
-    grid-area: other;
 }
         
 .anchor-button:hover {
@@ -563,40 +383,11 @@ nav ul li a{
 /* END INDEX BUTTONS */
 
 /* ARTICLES */
-.grid-article-container {
-    margin-top: 40px;
-    padding: 20px 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 5px;
-}
-.grid-article-item {
-    width:90%;
-    text-align: center;
-    flex-direction: column;
-    font-size: 25px;
-    margin: auto;
-}
-
-.icon-plus {
-margin-top: 15px;
-}
-
-.icon-plus span {
-    font-size: 40px;
-}
 
 .card-style {
     padding: 10px;
     background-color: #5aced5;
     color: #13004b;
-}
-
-.card-style h3 {
-    border-bottom: 1px solid white;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
 }
 
 /* END ARTICLES */
@@ -607,27 +398,6 @@ footer a {
     color: white;
 }
 
-.flex-footer {
-    padding: 30px;
-    margin: 20px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.grid-footer-container {
-    padding: 30px;
-    margin: 20px 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    align-items: center;
-}
-
-#footer-links{
-    font-size: 1.2rem;
-  }
-
 #footer-social a:visited {
     color: white;
 }
@@ -635,9 +405,6 @@ footer a {
 /*END FOOTER*/
 
 /*FORMS*/
-form {
-    width: 55%;
-}
 
 /*radio*/
 .radio-input-style{
@@ -669,30 +436,57 @@ select {
 /*END FORMS*/  
 
 /* others */
-.grid-dog-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+#dog-gallery a:hover {
+    color: white; 
 }
 
-#dog-gallery div.card-style:hover{
-    transform: scale(1.1,1.1);
+#pet-name {
+    width: fit-content;
+    padding: 10px;
+    text-align: start;
 }
 
-.slide-in{
-    animation: appear-left 1s ease 0s 1 normal forwards;
+#pet-info {
+    font-size: 1.2rem;
+    text-align: start;
 }
 
-@keyframes appear-left {
-    0% {
-        opacity: 0;
-        transform: translateX(-250px);
-      }
+}
+
+@media only screen and (min-width: 991px){
+    .family-background{
+        opacity: 50%;
+        height: 700px;
+    }
+
+    #get-started a {
+        margin-left: 40px;
+        color: white;
+        display: block;
+        width: fit-content;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: #119DA4;
+    }
+
+    #dog-gallery div.card-style:hover{
+        transform: scale(1.1,1.1);
+    }
     
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-}
-
+    .slide-in{
+        animation: appear-left 1s ease 0s 1 normal forwards;
+    }
+    
+    @keyframes appear-left {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+          }
+        
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+    }
 }
