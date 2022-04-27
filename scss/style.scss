@@ -1,18 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;800&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-
-$white: white;
-$cream_white: #F9F7F3;
-$purple: #410078;
-$light_purple: #7134a7;
-$dark_purple: #2c0050;
-$hover_purple: #7235a8;
-$teal: #119DA4;
-$light_teal: #5aced5;
-$dark_teal: #006e75;
-$brown_gray: #363434;
-$blue_text: #13004b;
-$family_background_height: 300px;
+@import "variables";
+@import "header";
+@import "footer";
 
 body {
  background-color: $cream_white;
@@ -34,25 +24,6 @@ body {
 
 a {
     text-decoration: none;
-}
-
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    font-weight: 600;  
-
-    #responsive-logo {
-        display: inline;
-        padding: 10px;
-        margin: 0px 15px 0px 30px;
-        height: 5em;
-    }
-    
-    #logo {
-        display: none;
-    }
 }
 
 main {
@@ -98,23 +69,6 @@ main {
         h5 {
             font-weight: bold;
         }
-    }
-}
-footer {
-    a {
-        color: $white; 
-    }
-
-    a:hover {
-        color: white; 
-        font-weight: 600;}
-
-    #footer-social {
-        font-size: 1.5rem !important;
-    }
-    
-    #footer-social a:visited {
-        color: white;
     }
 }
 

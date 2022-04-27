@@ -1,0 +1,17 @@
+footer {
+    a {
+        color: $white; 
+    }
+
+    a:hover {
+        color: white; 
+        font-weight: 600;}
+
+    #footer-social {
+        font-size: 1.5rem !important;
+    }
+    
+    #footer-social a:visited {
+        color: white;
+    }
+}

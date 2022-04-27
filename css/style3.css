@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;800&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-body {
-  background-color: #F9F7F3; }
-  body .purple-background {
-    background-color: #410078;
-    color: white; }
-  body .light-purple-background {
-    background-color: #7134a7;
-    color: white; }
-  body .teal-background {
-    background-color: #119DA4; }
-
-a {
-  text-decoration: none; }
-
 header {
   position: sticky;
   top: 0;
@@ -27,6 +13,33 @@ header {
     height: 5em; }
   header #logo {
     display: none; }
+
+footer a {
+  color: white; }
+
+footer a:hover {
+  color: white;
+  font-weight: 600; }
+
+footer #footer-social {
+  font-size: 1.5rem !important; }
+
+footer #footer-social a:visited {
+  color: white; }
+
+body {
+  background-color: #F9F7F3; }
+  body .purple-background {
+    background-color: #410078;
+    color: white; }
+  body .light-purple-background {
+    background-color: #7134a7;
+    color: white; }
+  body .teal-background {
+    background-color: #119DA4; }
+
+a {
+  text-decoration: none; }
 
 main #get-started {
   text-align: center;
@@ -58,19 +71,6 @@ main .card-style {
   color: #13004b; }
   main .card-style h5 {
     font-weight: bold; }
-
-footer a {
-  color: white; }
-
-footer a:hover {
-  color: white;
-  font-weight: 600; }
-
-footer #footer-social {
-  font-size: 1.5rem !important; }
-
-footer #footer-social a:visited {
-  color: white; }
 
 @media only screen and (min-width: 768px) {
   header img {
