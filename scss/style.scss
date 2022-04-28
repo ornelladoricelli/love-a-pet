@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import "variables";
+@import "header";
+@import "footer";
+
+body {
+ background-color: $cream_white;
+
+.white-font-color {
+    color: $white;  
+}
+ 
+.purple-background {
+    @extend .white-font-color;
+    background-color: $purple;
+}
+
+.light-purple-background {
+    @extend .white-font-color;
+    background-color: $light_purple;
+}
+
+.teal-background {
+    background-color: $teal;
+}
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    #get-started {
+        @extend .white-font-color;
+        text-align: center;
+        font-size: 30px;
+       
+        .family-background{
+            background-image: url("../images/family.jpeg");
+            opacity: 50%;
+            height: $family_background_height;
+            background-size: cover;
+        }
+
+        a{
+            display: none;
+        }
+
+        h1 {
+            line-height: 300px;
+        }
+    }
+
+    #button-container {
+        .anchor-button {
+            line-height: 10vh;
+            text-align: center;
+            text-decoration: none;
+            color: $white;
+            text-shadow: 2px 2px 4px $brown_gray;
+            font-weight: 600;
+            font-size: 45px;
+        }
+    }
+
+    .card-style {
+        text-align: center;
+        padding: 10px;
+        background-color: $light_teal;
+        color: $blue_text;
+
+        h5 {
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header{
+        img{
+            display: inline;
+            padding: 10px;
+            margin: 0px 15px 0px 30px;
+            height: 5em;
+        }
+        #responsive-logo{
+            display: none;
+        }
+        
+        #logo {
+            display: inline;
+            padding: 10px;
+            margin: 0px 15px 0px 30px;
+            height: 5em;
+        }
+    }
+
+    main {
+        #get-started{
+            text-align: left;
+            .family-background {
+                height: $family_background_height + 200px;
+            }
+            h1 {
+                padding-top: 40px;
+                margin-left: 40px;
+                line-height: 100px;
+            }
+        }
+        #button-container{
+            .anchor-button {
+                box-shadow: 5px 5px 3px $dark_purple;  
+                font-size: 30px;  
+                border-radius: 3%;
+                :hover {
+                    font-weight: 800;
+                    text-shadow: none;
+                    background-color: $hover_purple;  
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px){
+    main {
+        #get-started{
+            .family-background{
+                height: $family_background_height + 400px;
+            }
+            a {
+                margin-left: 40px;
+                color: $white;
+                display: block;
+                width: fit-content;
+                text-align: left;
+                padding: 14px 16px;
+                text-decoration: none;
+                background-color: $teal; 
+            }
+        }
+        
+    }
+}
