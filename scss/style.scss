@@ -6,15 +6,19 @@
 
 body {
  background-color: $cream_white;
+
+.white-font-color {
+    color: $white;  
+}
  
 .purple-background {
+    @extend .white-font-color;
     background-color: $purple;
-    color: $white;
 }
 
 .light-purple-background {
+    @extend .white-font-color;
     background-color: $light_purple;
-    color: $white;
 }
 
 .teal-background {
@@ -28,9 +32,9 @@ a {
 
 main {
     #get-started {
+        @extend .white-font-color;
         text-align: center;
         font-size: 30px;
-        color: $white;
        
         .family-background{
             background-image: url("../images/family.jpeg");

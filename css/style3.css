@@ -29,12 +29,12 @@ footer #footer-social a:visited {
 
 body {
   background-color: #F9F7F3; }
+  body .white-font-color, body .purple-background, body .light-purple-background, body main #get-started, main body #get-started {
+    color: white; }
   body .purple-background {
-    background-color: #410078;
-    color: white; }
+    background-color: #410078; }
   body .light-purple-background {
-    background-color: #7134a7;
-    color: white; }
+    background-color: #7134a7; }
   body .teal-background {
     background-color: #119DA4; }
 
@@ -43,8 +43,7 @@ a {
 
 main #get-started {
   text-align: center;
-  font-size: 30px;
-  color: white; }
+  font-size: 30px; }
   main #get-started .family-background {
     background-image: url("../images/family.jpeg");
     opacity: 50%;
