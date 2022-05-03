@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;600;800&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@import "variables";
-@import "header";
-@import "footer";
+@import "_variables";
+@import "_header";
+@import "_footer";
 
-body {
- background-color: $cream_white;
+a {
+    text-decoration: none;
+}
 
 .white-font-color {
     color: $white;  
@@ -24,10 +25,32 @@ body {
 .teal-background {
     background-color: $teal;
 }
+
+.teal-shadow {
+    box-shadow: 3px 3px 2px $dark_teal;
 }
 
-a {
-    text-decoration: none;
+.margin-y-twenty {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.margin-x-twenty {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.content-width {
+    width: fit-content;
+    padding: 10px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px $brown_gray;
+}
+
+body {
+    background-color: $cream_white;
 }
 
 main {
@@ -51,9 +74,8 @@ main {
             line-height: 300px;
         }
     }
-
-    #button-container {
-        .anchor-button {
+    
+    .anchor-button {
             line-height: 10vh;
             text-align: center;
             text-decoration: none;
@@ -61,7 +83,6 @@ main {
             text-shadow: 2px 2px 4px $brown_gray;
             font-weight: 600;
             font-size: 45px;
-        }
     }
 
     .card-style {
@@ -74,28 +95,112 @@ main {
             font-weight: bold;
         }
     }
+
+    #dog-gallery a:hover {
+        @extend .white-font-color;
+    }
+    
+    .flex-container{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flex-container-wrap{
+        @extend .flex-container;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    #pet-info {
+        font-size: 1.3rem;
+    }
+    
+    #pet-name {
+        padding: 10px;
+        text-align: center;
+    }
+
+    form {
+        width: 85%;
+        label{
+            font-size: 1.2em;
+            display: inline-block;  
+        }
+        .label {
+            font-size: 1.2em;
+            display: inline-block;  
+            margin-bottom: 12px;
+        }
+        input[type=reset], input[type=submit]{
+            @extend .white-font-color;
+            font-size: 20px; 
+        }
+        select{
+            font-size: 1em;
+        }
+
+        .input-style {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            border-radius: 50%;
+            :after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+
+        .radio-input-style{
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            input{
+                position: absolute;
+                opacity: 0;
+                :checked~ .checkmark{
+                    background-color: $light_teal;
+                    :after {
+                        display: block;
+                    }
+                }
+            }
+          }
+        
+        .radio-input-style .checkmark::after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $white;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    header{
-        img{
-            display: inline;
-            padding: 10px;
-            margin: 0px 15px 0px 30px;
-            height: 5em;
-        }
-        #responsive-logo{
-            display: none;
-        }
-        
-        #logo {
-            display: inline;
-            padding: 10px;
-            margin: 0px 15px 0px 30px;
-            height: 5em;
-        }
-    }
-
     main {
         #get-started{
             text-align: left;
@@ -108,8 +213,7 @@ main {
                 line-height: 100px;
             }
         }
-        #button-container{
-            .anchor-button {
+        .anchor-button {
                 box-shadow: 5px 5px 3px $dark_purple;  
                 font-size: 30px;  
                 border-radius: 3%;
@@ -118,6 +222,33 @@ main {
                     text-shadow: none;
                     background-color: $hover_purple;  
                 }
+        }
+        #pet-name {
+            width: fit-content;
+            padding: 10px;
+            text-align: start;
+        }
+        #pet-info {
+            font-size: 1.2rem;
+            text-align: start;
+        }
+        form{
+            input[type=submit]:hover{
+                background-color: $dark_teal;
+            }        
+            input[type=reset]:hover{
+                background-color: $dark_purple;
+            }
+
+            .radio-input-style{
+                cursor: pointer;
+                :hover input ~ .checkmark{
+                    background-color: #ccc;
+                }
+            }
+
+            select{
+                font-size: 0.9em;
             }
         }
     }
@@ -141,5 +272,25 @@ main {
             }
         }
         
+    }
+
+        #dog-gallery div.card-style:hover{
+        transform: scale(1.1,1.1);
+    }
+
+    .slide-in{
+        animation: appear-left 1s ease 0s 1 normal forwards;
+    }
+    
+    @keyframes appear-left {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+          }
+        
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
     }
 }
