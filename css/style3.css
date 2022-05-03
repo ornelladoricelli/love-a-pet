@@ -13,19 +13,6 @@ header {
     height: 5em; }
   header #logo {
     display: none; }
-  @media only screen and (min-width: 768px) {
-    header header img {
-      display: inline;
-      padding: 10px;
-      margin: 0px 15px 0px 30px;
-      height: 5em; }
-    header header #responsive-logo {
-      display: none; }
-    header header #logo {
-      display: inline;
-      padding: 10px;
-      margin: 0px 15px 0px 30px;
-      height: 5em; } }
 
 footer a {
   color: white; }
@@ -183,6 +170,18 @@ main form {
     background: white; }
 
 @media only screen and (min-width: 768px) {
+  header img {
+    display: inline;
+    padding: 10px;
+    margin: 0px 15px 0px 30px;
+    height: 5em; }
+  header #responsive-logo {
+    display: none; }
+  header #logo {
+    display: inline;
+    padding: 10px;
+    margin: 0px 15px 0px 30px;
+    height: 5em; }
   main #get-started {
     text-align: left; }
     main #get-started .family-background {

@@ -15,25 +15,4 @@ header {
     #logo {
         display: none;
     }
-
-    @media only screen and (min-width: 768px) {
-        header{
-            img{
-                display: inline;
-                padding: 10px;
-                margin: 0px 15px 0px 30px;
-                height: 5em;
-            }
-            #responsive-logo{
-                display: none;
-            }
-            
-            #logo {
-                display: inline;
-                padding: 10px;
-                margin: 0px 15px 0px 30px;
-                height: 5em;
-            }
-        }
-    }
 }
