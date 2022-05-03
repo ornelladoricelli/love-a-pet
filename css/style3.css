@@ -13,6 +13,19 @@ header {
     height: 5em; }
   header #logo {
     display: none; }
+  @media only screen and (min-width: 768px) {
+    header header img {
+      display: inline;
+      padding: 10px;
+      margin: 0px 15px 0px 30px;
+      height: 5em; }
+    header header #responsive-logo {
+      display: none; }
+    header header #logo {
+      display: inline;
+      padding: 10px;
+      margin: 0px 15px 0px 30px;
+      height: 5em; } }
 
 footer a {
   color: white; }
@@ -27,19 +40,41 @@ footer #footer-social {
 footer #footer-social a:visited {
   color: white; }
 
-body {
-  background-color: #F9F7F3; }
-  body .white-font-color, body .purple-background, body .light-purple-background, body main #get-started, main body #get-started {
-    color: white; }
-  body .purple-background {
-    background-color: #410078; }
-  body .light-purple-background {
-    background-color: #7134a7; }
-  body .teal-background {
-    background-color: #119DA4; }
-
 a {
   text-decoration: none; }
+
+.white-font-color, .purple-background, .light-purple-background, main #get-started, main #dog-gallery a:hover, main form input[type=reset], main form input[type=submit] {
+  color: white; }
+
+.purple-background {
+  background-color: #410078; }
+
+.light-purple-background {
+  background-color: #7134a7; }
+
+.teal-background {
+  background-color: #119DA4; }
+
+.teal-shadow {
+  box-shadow: 3px 3px 2px #006e75; }
+
+.margin-y-twenty {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.margin-x-twenty {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.content-width {
+  width: fit-content;
+  padding: 10px; }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px #363434; }
+
+body {
+  background-color: #F9F7F3; }
 
 main #get-started {
   text-align: center;
@@ -54,7 +89,7 @@ main #get-started {
   main #get-started h1 {
     line-height: 300px; }
 
-main #button-container .anchor-button {
+main .anchor-button {
   line-height: 10vh;
   text-align: center;
   text-decoration: none;
@@ -71,19 +106,83 @@ main .card-style {
   main .card-style h5 {
     font-weight: bold; }
 
+main .flex-container, main .flex-container-wrap {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+main .flex-container-wrap {
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px; }
+
+main #pet-info {
+  font-size: 1.3rem; }
+
+main #pet-name {
+  padding: 10px;
+  text-align: center; }
+
+main form {
+  width: 85%; }
+  main form label {
+    font-size: 1.2em;
+    display: inline-block; }
+  main form .label {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-bottom: 12px; }
+  main form input[type=reset], main form input[type=submit] {
+    font-size: 20px; }
+  main form select {
+    font-size: 1em; }
+  main form .input-style {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  main form .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%; }
+    main form .checkmark :after {
+      content: "";
+      position: absolute;
+      display: none; }
+  main form .radio-input-style {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    main form .radio-input-style input {
+      position: absolute;
+      opacity: 0; }
+      main form .radio-input-style input :checked ~ .checkmark {
+        background-color: #5aced5; }
+        main form .radio-input-style input :checked ~ .checkmark :after {
+          display: block; }
+  main form .radio-input-style .checkmark::after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white; }
+
 @media only screen and (min-width: 768px) {
-  header img {
-    display: inline;
-    padding: 10px;
-    margin: 0px 15px 0px 30px;
-    height: 5em; }
-  header #responsive-logo {
-    display: none; }
-  header #logo {
-    display: inline;
-    padding: 10px;
-    margin: 0px 15px 0px 30px;
-    height: 5em; }
   main #get-started {
     text-align: left; }
     main #get-started .family-background {
@@ -92,14 +191,31 @@ main .card-style {
       padding-top: 40px;
       margin-left: 40px;
       line-height: 100px; }
-  main #button-container .anchor-button {
+  main .anchor-button {
     box-shadow: 5px 5px 3px #2c0050;
     font-size: 30px;
     border-radius: 3%; }
-    main #button-container .anchor-button :hover {
+    main .anchor-button :hover {
       font-weight: 800;
       text-shadow: none;
-      background-color: #7235a8; } }
+      background-color: #7235a8; }
+  main #pet-name {
+    width: fit-content;
+    padding: 10px;
+    text-align: start; }
+  main #pet-info {
+    font-size: 1.2rem;
+    text-align: start; }
+  main form input[type=submit]:hover {
+    background-color: #006e75; }
+  main form input[type=reset]:hover {
+    background-color: #2c0050; }
+  main form .radio-input-style {
+    cursor: pointer; }
+    main form .radio-input-style :hover input ~ .checkmark {
+      background-color: #ccc; }
+  main form select {
+    font-size: 0.9em; } }
 
 @media only screen and (min-width: 991px) {
   main #get-started .family-background {
@@ -112,4 +228,15 @@ main .card-style {
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #119DA4; } }
+    background-color: #119DA4; }
+  #dog-gallery div.card-style:hover {
+    transform: scale(1.1, 1.1); }
+  .slide-in {
+    animation: appear-left 1s ease 0s 1 normal forwards; }
+  @keyframes appear-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px); }
+    100% {
+      opacity: 1;
+      transform: translateX(0); } } }

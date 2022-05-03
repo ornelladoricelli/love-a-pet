@@ -1,0 +1,39 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-weight: 600;  
+
+    #responsive-logo {
+        display: inline;
+        padding: 10px;
+        margin: 0px 15px 0px 30px;
+        height: 5em;
+    }
+    
+    #logo {
+        display: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+        header{
+            img{
+                display: inline;
+                padding: 10px;
+                margin: 0px 15px 0px 30px;
+                height: 5em;
+            }
+            #responsive-logo{
+                display: none;
+            }
+            
+            #logo {
+                display: inline;
+                padding: 10px;
+                margin: 0px 15px 0px 30px;
+                height: 5em;
+            }
+        }
+    }
+}
